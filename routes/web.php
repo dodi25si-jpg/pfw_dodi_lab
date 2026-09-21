@@ -1,10 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MahasiswaController;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/mahasiswa', function () {
+    return 'halo saya';
 });
 
 Route::get('/pcr', function () {
@@ -12,13 +15,16 @@ Route::get('/pcr', function () {
 });
 
 Route::get('/mahasiswa/detail', function () {
-    return '<h1>selamat datang </h1> <h2> INI ADALAH DETAIL MAHASISWA</h2>';
+    return '<h1>selamat datang</h1><h2>INI ADALAH DETAIL MAHASISWA</h2>';
 });
 
-Route::get('', function () {
-    return '<h1>selamat datang </h1> <h2> INI ADALAH profil MAHASISWA</h2>';
+Route::get('/mahasiswa/profil', function () {
+    return '<h1>selamat datang</h1><h2>INI ADALAH PROFIL MAHASISWA</h2>';
 });
 
+Route::get('/about', function () {
+    return view('halaman-about');
+});
 
 
 

@@ -29,7 +29,9 @@ Route::get('/about', function () {
     return view('halaman-about');
 });
 
-Route::get('/home',[HomeController::class,'create']);
+Route::get('/home', [HomeController::class, 'index']);
 
-
+// Route::get('/home', function () {
+//     return view('home');
+// });
 

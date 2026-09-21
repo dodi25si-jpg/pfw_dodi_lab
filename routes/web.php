@@ -1,13 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MahasiswaController;
+
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/mahasiswa', function () {
-    return 'halo saya';
+    return 'Hallo Mahasiswa';
 });
 
 Route::get('/pcr', function () {
@@ -25,6 +28,8 @@ Route::get('/mahasiswa/profil', function () {
 Route::get('/about', function () {
     return view('halaman-about');
 });
+
+Route::get('/home',[HomeController::class,'create']);
 
 
 

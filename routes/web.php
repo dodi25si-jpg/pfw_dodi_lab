@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\MahasiswaController;
 
 
@@ -31,7 +32,9 @@ Route::get('/about', function () {
 
 Route::get('/home', [HomeController::class, 'index']);
 
-// Route::get('/home', function () {
-//     return view('home');
-// });
+Route::post('question/store', [QuestionController::class, 'store'])
+		->name('question.store');
+
+Route::get('/question', [QuestionController::class, 'index'])
+		->name('question.index');
 

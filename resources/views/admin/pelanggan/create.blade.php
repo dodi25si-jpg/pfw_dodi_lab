@@ -323,7 +323,7 @@
                                     <!-- Birthday -->
                                     <div class="mb-3">
                                         <label for="birthday" class="form-label">Birthday</label>
-                                        <input type="date" id="birthday" class="form-control">
+                                        <input type="date" id="birthday" class="form-control" name="birthday"required>
                                     </div>
 
                                     <!-- Gender -->
@@ -348,7 +348,7 @@
                                     <!-- Phone -->
                                     <div class="mb-3">
                                         <label for="phone" class="form-label">Phone</label>
-                                        <input type="text" id="phone" class="form-control">
+                                        <input type="text" id="phone" class="form-control" name="phone"required>
                                     </div>
 
                                     <!-- Buttons -->

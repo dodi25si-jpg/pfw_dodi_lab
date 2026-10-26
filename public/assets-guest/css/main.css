@@ -1,0 +1,258 @@
+/* ============================================================
+   KANTINKU - GUEST LANDING PAGE STYLESHEET (PERBAIKAN)
+   ============================================================ */
+
+:root {
+  --primary-color: #0d6efd;
+  --primary-hover: #0b5ed7;
+  --dark-color: #0f172a;
+  --body-color: #475569;
+  --bg-light: #f8fafc;
+  --border-color: #e2e8f0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--body-color);
+  line-height: 1.6;
+}
+
+/* --- Navbar --- */
+.navbar-guest {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.brand-logo {
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo img {
+  height: 36px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.nav-link-custom {
+  color: var(--body-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+}
+
+.nav-link-custom:hover, 
+.nav-link-custom.active {
+  color: var(--primary-color);
+  background-color: rgba(13, 110, 253, 0.05);
+  font-weight: 600;
+}
+
+/* --- Buttons --- */
+.btn-pill-outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.6rem 1.6rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-pill-outline:hover {
+  border-color: #ffffff;
+  color: var(--dark-color);
+  background-color: #ffffff;
+}
+
+.btn-pill-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.6rem 1.6rem;
+  font-size: 0.9rem;
+  border: none;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.25);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-pill-primary:hover {
+  background-color: var(--primary-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(13, 110, 253, 0.35);
+}
+
+/* --- Hero Section (Background Makanan & Overlay Dark) --- */
+.hero-section {
+  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), 
+              url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80') no-repeat center center / cover;
+  padding: 5rem 0 8rem 0;
+  color: #ffffff;
+}
+
+.hero-badge {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-desc {
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  max-width: 540px;
+}
+
+.hero-img-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.hero-img-card img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* --- Stats Bar --- */
+.stats-container {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 1.25rem;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+  position: relative;
+  z-index: 10;
+  color: var(--body-color);
+}
+
+.stat-item-number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--dark-color);
+}
+
+.stat-item-label {
+  font-size: 0.875rem;
+  color: var(--body-color);
+  margin-bottom: 0;
+}
+
+/* --- Features Section --- */
+.features-section {
+  padding: 6rem 0 5rem 0;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: 2.25rem;
+  color: var(--dark-color);
+  letter-spacing: -0.01em;
+}
+
+.section-subtitle {
+  color: var(--body-color);
+  font-size: 1.05rem;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 2.25rem;
+  border: 1px solid var(--border-color);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08);
+  border-color: #cbd5e1;
+}
+
+.feature-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon-blue { background-color: #eff6ff; color: #2563eb; }
+.icon-green { background-color: #f0fdf4; color: #16a34a; }
+.icon-orange { background-color: #fff7ed; color: #ea580c; }
+
+.feature-card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--dark-color);
+  margin-bottom: 0.75rem;
+}
+
+.feature-card-desc {
+  font-size: 0.95rem;
+  color: var(--body-color);
+  margin: 0;
+}
+
+/* --- CTA Banner --- */
+.cta-banner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 1.75rem;
+  padding: 3.5rem 2rem;
+  color: #ffffff;
+}
+
+/* --- Footer --- */
+.footer-guest {
+  border-top: 1px solid var(--border-color);
+  padding: 2.5rem 0;
+  background-color: #ffffff;
+}

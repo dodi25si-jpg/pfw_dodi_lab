@@ -6,6 +6,7 @@ use App\Http\Controllers\PelangganController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AdminController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -46,3 +47,5 @@ Route::get('/dashboard', [DashboardController::class, 'index'])
 Route::resource('pelanggan', PelangganController::class);
 
 Route::resource('user', UserController::class)->except(['show']);
+
+Route::get('/admin', [AdminController::class, 'index']);
